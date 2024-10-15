@@ -1,0 +1,32 @@
+body{
+  height: 100vh;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+.gradient-text {
+  font-size: 2em;
+  font-weight: bold;
+  font-variant: small-caps;
+  background: linear-gradient(to right, #001aff, #ac09fd,rgb(255, 9, 210));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 5px rgba(255, 233, 133, 0.3);
+  background-clip: text;
+  text-fill-color: transparent;
+}

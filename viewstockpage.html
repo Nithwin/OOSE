@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Stock</title>
+    <style>
+        /* General body styling */
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin-top: 100px; 
+            background-color: #eaf0e6; /* Light background color */
+        }
+
+        /* Table styling */
+        table { 
+            width: 80%; 
+            margin: 20px auto; /* Center table */
+            border-collapse: collapse; 
+            background-color: white; /* White background for table */
+        }
+
+        /* Table border and cell padding */
+        table, th, td { 
+            border: 1px solid black; 
+            padding: 10px; 
+        }
+
+        /* Header row styling */
+        th { 
+            background-color: #007bff; /* Bootstrap primary blue color */
+            color: white; 
+        }
+
+        /* Even row background color for readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Hover effect for table rows */
+        tr:hover { 
+            background-color: #e9ecef; 
+        }
+
+        /* Responsive table on smaller screens */
+        @media (max-width: 600px) {
+            table { 
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Stock</h1>
+    <table>
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Sample Item 1</td>
+            <td>100</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Sample Item 2</td>
+            <td>50</td>
+            <td>$15.00</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+</body>
+</html>
