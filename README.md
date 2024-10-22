@@ -1,4 +1,4 @@
-# OOSe Follow These Steps to Run My Project
+OOSe Follow These Steps to Run My Project
 
 # `npm install express body-parser mysql2`
 
