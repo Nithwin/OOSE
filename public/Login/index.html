@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./styles.css">
+    <script>
+        // Function to check for error in URL
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('error')) {
+                alert('Incorrect username or password. Please try again.');
+            }
+        };
+    </script>
 </head>
 <body>
     <div class="form-container">
-        <h1 class="gradient-text">Login</h1>
-        <form action="dashboard.html" method="post">
+        <h1 class="orange_gradient">Login</h1>
+        <form action="/login" method="post"> <!-- Change action to /login -->
             <label for="username">Username</label><br>
             <input type="text" id="username" name="username" required><br>
             <label for="password">Password</label><br>

@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-   <link rel="stylesheet" href="./styles.css">
    <link rel="stylesheet" href="../bootstrap.min.css">
+   <style>
+    body{
+        height: 100vh;
+    }
+    .aqua{
+        color: aquamarine;
+    }
+    .orange_gradient {
+        background: linear-gradient(to right, #f44336, #ff9800, #ffc107); /* Red, Orange, Yellow */
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold; /* Optional: to make the text bolder */
+      }
+
+   </style>
 </head>
 <body class="bg-dark d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center flex-column">
         <div>
-            <h1 class="gradient-text h1">Stock Maintenance Dashboard</h1>
-            <p class="text-success text-center">Select an option below:</p>
+            <h1 class="orange_gradient h1">Stock Maintenance Dashboard</h1>
+            <p class="aqua text-center">Select an option below:</p>
         </div>
        <div>
-            <a href="add-stock.html" class="btn btn-primary m-3">Add Stock</a>
-            <a href="edit-stock.html" class="btn btn-primary m-3">Edit Stock</a>
-            <a href="view-stock.html" class="btn btn-primary m-3">View Stock</a>
+            <button class="btn btn-primary m-3 " onclick="Path('/add')">Add Stock</button>
+            <button class="btn btn-primary m-3 edit" onclick="Path('/edit')">Edit Stock</button>
+            <button class="btn btn-primary m-3 view" onclick="Path('/view')">View Stock</button>
         </div>
            </div>
+
+           <script>
+            function Path(a){
+                window.location.href = a;
+            }
+        </script>
    </body>
 </html>

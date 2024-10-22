@@ -79,27 +79,11 @@ input[type="submit"]:hover {
 }
 
 
-.gradient-text {
-  font-size: 2em;
-  font-weight: bold;
-  font-variant: small-caps;
-  background: linear-gradient(to right, #001aff, #ac09fd,rgb(255, 9, 210));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 2px 5px rgba(255, 233, 133, 0.3);
+
+.orange_gradient {
+  background: linear-gradient(to right, #f44336, #ff9800, #ffc107); /* Red, Orange, Yellow */
   background-clip: text;
-  text-fill-color: transparent;
-}
-
-.gradient1 {
-  background: linear-gradient(to right, #ff00f7, #fd0909,rgb(214, 9, 255));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 2px 5px rgba(255, 233, 133, 0.3);
-  background-clip: text;
-  text-fill-color: transparent;
-
+  color: transparent;
+  font-weight: bold; /* Optional: to make the text bolder */
 }
-
-
-

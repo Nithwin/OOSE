@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Stock</title>
-    <link rel="stylesheet" href="cd .css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        body {
+            height: 100vh;
+        }
+        .orange_gradient {
+            background: linear-gradient(to right, #f44336, #ff9800, #ffc107); /* Red, Orange, Yellow */
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold; /* Optional: to make the text bolder */
+          }
+
+    </style>
 </head>
-<body>
-    <h1>Edit Stock</h1>
-    <form action="dashboard.html" method="post">
-        <label for="item">Item Name:</label><br>
-        <input type="text" id="item" name="item" required><br>
+<body class="d-flex justify-content-center align-items-center flex-column bg-dark text-white">
+    <h1 class="mb-4 orange_gradient h2">Edit Stock</h1>
+    <form action="/update" method="post" class=" p-4 rounded shadow-lg rounded" style="background-color: #464646;">
+        <div class="mb-3">
+            <label for="item" class="form-label">Item Name:</label>
+            <input type="text" id="item" name="item" class="form-control" required>
+        </div>
 
-        <label for="quantity">New Quantity:</label><br>
-        <input type="number" id="quantity" name="quantity" required><br>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">New Quantity:</label>
+            <input type="number" id="quantity" name="quantity" class="form-control" required>
+        </div>
 
-        <label for="price">New Price:</label><br>
-        <input type="number" id="price" name="price" required><br>
+        <div class="mb-3">
+            <label for="price" class="form-label">New Price:</label>
+            <input type="number" id="price" name="price" class="form-control" required>
+        </div>
 
-        <input type="submit" value="Update Stock">
+        <input type="submit" value="Update Stock" class="btn btn-primary my-2 w-100">
     </form>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Stock</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        .orange_gradient {
+            background: linear-gradient(to right, #f44336, #ff9800, #ffc107); /* Red, Orange, Yellow */
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold; /* Optional: to make the text bolder */
+        }
+        .table-dark-blue {
+            background-color: #001f3f; /* Dark blue color */
+            color: white; /* Text color */
+        }
+        .table-dark-blue th, .table-dark-blue td {
+            border-color: #007bff; /* Border color for better visibility */
+        }
+    </style>
+</head>
+<body class="bg-dark d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+    <h1 class="orange_gradient mb-4">Available Stock</h1>
+    <div class="table-responsive d-flex justify-content-center align-items-center">
+        <table class="table table-striped table-bordered table-dark-blue text-white w-25">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% stocks.forEach(stock => { %>
+                    <tr>
+                        <td><%= stock.name %></td>
+                        <td><%= stock.quantity %></td>
+                        <td><%= stock.price %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
